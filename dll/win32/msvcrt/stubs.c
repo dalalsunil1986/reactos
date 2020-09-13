@@ -757,6 +757,34 @@ _Check_return_
 _CRTIMP
 int
 __cdecl
+_wcsnicoll_l(
+    _In_z_ const wchar_t *str1,
+    _In_z_ const wchar_t *str2,
+    _In_ size_t maxCount,
+    _In_opt_ _locale_t locale)
+{
+    UNIMPLEMENTED;
+    return 0;
+}
+
+_Check_return_
+_CRTIMP
+int
+__cdecl
+_wcsnicmp_l(
+    _In_reads_or_z_(_MaxCount) const wchar_t *str1,
+    _In_reads_or_z_(_MaxCount) const wchar_t *str2,
+    _In_ size_t maxCount,
+    _In_opt_ _locale_t locale)
+{
+    UNIMPLEMENTED;
+    return 0;
+}
+
+_Check_return_
+_CRTIMP
+int
+__cdecl
 _wcsncoll_l(
     _In_z_ const wchar_t *str1,
     _In_z_ const wchar_t *str2,
